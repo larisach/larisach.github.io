@@ -1,0 +1,37 @@
+body {
+		background-color: #EEEEEE;
+		margin: 5px;}
+
+	.primary{
+		  width: 455px; 
+		  height: 726px;
+          margin: auto; 
+          padding-top: 23px; 
+          padding-left: 60px;
+         
+          background: #FFFFFF; 
+          line-height: 1.5;
+     }
+    .foto{
+       	text-align: center;
+     }
+    p.profession{
+     	margin-top: 5px;
+    	}
+    
+    p {
+         padding: 0; 
+         margin-left: 10px;
+         font-size: 13pt;
+    }    
+    hr{
+    	vertical-align: "left";
+    	width: 405px;
+    	margin: 16px 0;
+    	margin-bottom:22px;
+    }
+     ul {
+     	 margin: 25px;
+         padding: 0; 
+         margin-left: 30px;   
+    }
