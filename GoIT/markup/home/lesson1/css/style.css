@@ -1,0 +1,32 @@
+body{
+  background-color: #EEEEEE; 
+}
+.primary{
+  width: 420px; 
+  min-height: 750px;
+  margin: auto;       
+  background: #FFFFFF; 
+  padding: 30px 50px;
+}
+h2{
+  text-align:  center;
+}
+.MyFoto{ 
+  padding-top: 25px; 
+}
+.profession{
+  padding-top: 8px;   
+}
+hr{ 
+  width: 420px;
+  text-align: center;
+}
+ul {
+  padding-top: 30px; 
+  line-height: 1.6;
+}
+p{
+  font-size: 13pt; 
+}
+   
+   
