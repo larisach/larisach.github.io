@@ -11,15 +11,8 @@ body{
 h2{
   text-align:  center;
 }
-.MyFoto{ 
-  padding-top: 25px; 
-}
-.profession{
-  padding-top: 8px;   
-}
-hr{ 
-  width: 420px;
-  text-align: center;
+.hr{
+  border-bottom: 1px solid #000;
 }
 ul {
   padding-top: 30px; 
@@ -27,6 +20,5 @@ ul {
 }
 p{
   font-size: 13pt; 
-}
-   
+}  
    
