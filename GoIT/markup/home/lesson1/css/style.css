@@ -8,8 +8,7 @@ body{
   background: #FFFFFF; 
   padding: 30px 50px;
 }
-h2{
-  text-align:  center;
+.Foto, h2 {text-align: center;
 }
 .hr{
   border-bottom: 1px solid #000;
