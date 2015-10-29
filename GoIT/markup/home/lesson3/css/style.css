@@ -10,7 +10,7 @@ body {
 }
 .primary {
 	 width: 1060px; 
-     min-height: 900px;
+     min-height: 850px;
      margin: 0 auto;       
      background: #ffffff; 
      box-shadow: 0 0 10px rgba(0,0,0,0.3);	
@@ -82,9 +82,12 @@ h1 {
  	padding-right: 45px;  
  	padding-top: 45px;  
  }
-.image {	
+.image {
+ 
 	border: 1px solid #c8c8c8;
+	 text-align: center;
 }
+
 p {
 	padding: 30px;
     font-family: "Tahoma", sans-serif;
@@ -96,7 +99,7 @@ p {
 	width: 970px;
 	height: 40px;	
 	margin-left: 45px;
-	margin-top: 670px;
+	margin-top: 600px;
 	background: #e1e1e1;
  }
 .menu li {
