@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    
 }
 body {
   background: #f9f9f9; 
@@ -18,7 +19,7 @@ body {
 /*HEADER*/
 h1 {
 	padding: 47px;
-	font-family: Arial, sans-serif;
+	font-family: "Tahoma", sans-serif;
 }
 .header {
 	width: 970px;
@@ -35,12 +36,14 @@ h1 {
 .header a {	
 	display: block;
 	color: #ebebeb;
+	font-family: "Tahoma", sans-serif;
 }
 .header li a:hover {
      background: #3e3e3e;  
      border-left: 1px solid #ffffff; 
      border-right: 1px solid #ffffff; 
 }
+
  
  /*SIDEBAR*/
  .sidebar { 
@@ -61,6 +64,7 @@ h1 {
 .list a{	
 	display: block;
 	color: #abaaaa;	
+	font-family: "Tahoma", sans-serif;
 }
 .list li:hover {  
     background: #f9f9f9;  
@@ -75,39 +79,44 @@ h1 {
 .content { 
  	width: 720px;
  	float: right;
- 	margin: 45px;    
+ 	padding-right: 45px;  
+ 	padding-top: 45px;  
  }
 .image {	
 	border: 1px solid #c8c8c8;
 }
 p {
-	padding-top: 30px;
-    padding-left: 25px;
+	padding: 30px;
+    font-family: "Tahoma", sans-serif;
 }
 
 
   /*FOOTER*/
 .footer {
 	width: 970px;
-	height: 40px;
+	height: 40px;	
 	margin-left: 45px;
-	margin-top: 650px;
+	margin-top: 670px;
 	background: #e1e1e1;
-}
-.footer li {
-	display: inline-block;
+ }
+.menu li {
 	width: 100px;
 	line-height: 40px;
+	display: inline-block;	
 	text-align: center;
 }
-.footer a {
+.menu li a, .copy_r {
 	display: block;
 	color: #2c2c2c;	
+	font-family: "Tahoma", sans-serif; 
 }
-.footer li a:hover {
+.menu li a:hover {
     text-decoration: underline;
 }
-.footer li:last-child{	
-	width: 530px;
-	text-align: right;
-} 
+.copy_r {
+	float: right;
+	height: 40px;
+	margin: 0;
+	padding-top: 10px;
+	padding-right: 10px;
+}
