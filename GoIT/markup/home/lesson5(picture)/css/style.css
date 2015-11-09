@@ -1,0 +1,69 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+td {
+    border: 5px solid black;
+    border-right: none;
+    border-bottom: none;
+}
+tr:first-child td {
+    border-top: none;
+}
+td:first-child {
+    border-left: none;
+}
+
+/*COLOUR*/
+.cell3, .cell6, .cell14 {
+	background-color: #ffeb5f;
+}
+.cell5 {
+	background-color: #ff6043;
+}
+.cell10, .cell11, .cell15, .cell16, .cell20 {
+	background-color: #141414;
+}
+.cell18 {
+	background-color: #054480;
+}
+
+/*SIZE*/
+.cell1 {
+	width: 116px;
+	height: 47px;
+}
+.cell2 {
+	width: 200px; 
+	height: 47px;
+}
+.cell3 {
+	width: 165px; 
+	height: 47px;
+}
+.cell4, .cell6, .cell8, .cell9 {	
+	height: 128px;
+}
+.cell10, .cell11, .cell15, .cell16 {	
+	height: 60px;
+	width: 60px;
+}
+.cell20 {
+	height: 31px;
+}
+.cell21 {
+	height: 33px;
+}
+.cell4, .cell7, .cell14 {	
+	width: 50px;
+}
+.cell12, .cell17 {	
+	width: 128px;
+}
+.cell8, .cell9 {	
+	width: 78px;
+}
