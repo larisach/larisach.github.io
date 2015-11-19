@@ -2,54 +2,53 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Cadastre</title>
+	<title>Homework5</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="top">
-		<ul class="topMenu">
-			<li><a href="#">Meu YouBike</a></li>
-			<li><a href="#">Vender</a></li>
-			<li><a href="#">Forum</a></li>
-			<li><a href="#">Contato</a></li>
-			<li><a href="#">Ajuda</a></li>
-		</ul>
-
-			<div class="registration">					
-				Ola! <a class="Entrar" href="#">Entrar</a> ou <a class="Cadastre" href="#">Cadastre-se</a>			
+	<header>
+			<div class="upper_menu">
+			<div class="left_upper_menu">
+				<ul>
+					<li><a href="#">Meu YouBike</a></li>
+					<li><a href="#">Vender</a></li>
+					<li><a href="#">Forum</a></li>
+					<li><a href="#">Contato</a></li>
+					<li><a href="#">Ajuda</a></li>
+				</ul>
 			</div>
-	  
 
-			<div class="flag">				
-					<img src="img/icon.png" alt="flag" align="left"><a href="#">Minhas Ofertas</a>	   	
+			<div class="right_upper_menu">				
+				<ul>
+					<li><a href="#">Minhas Ofertas</a></li>
+					<li><span>Ola!&nbsp;</span><a href="#">Entrar</a><span>&nbsp;ou&nbsp;</span><a href="#">Cadastre-se</a></li>
+				</ul>
 			</div>
-	
-	</div>
-
-
-	<div>
-		<img class="MainFon" src="img/backgroung.png" alt="backgroung">
-		<div class="FormFon">
-			<div class="header">
-				Cadastre-se
 			</div>
-			
-				<div class="button">	
-							
+	</header>
+	<main class="main_form">
+		<div class="title_registration">
+			<span>Cadastre-se</span>
+		</div>
+		<div class="separation"></div>
+			<div class="body_registration">
+				<div class="button">								
 						<a href="https://www.facebook.com/">
 							<span class="icon">f</span>
 							<span class="bodyButton">
 								<strong>Log In</strong>
 								with
-								<strong>Facebook &nbsp;&nbsp;&nbsp;&nbsp;&gt; </strong>
-							</span>
-										
-						</a>
-				
+								<strong>Facebook</strong>
+							</span>										
+						</a>				
 				</div>
-
+				<div class="OU">
+					<div class="left_line"></div>
+						<p>OU</p>
+					<div class="righe_line"></div>
+				</div>
 							
-			<form action="#">
+			<form action="#" method="post">
 				<ul class="forma">					
 					<li><input type="text" name="firstName" placeholder = "First Name" required></li>
 					<li><input type="text" name="lastName" placeholder = "Last Name" required></li>
@@ -70,7 +69,11 @@
 				<p>By clicking the button above, you agree to the Terms of Service</p>
 				<p>Xiew our Privacy Policy.</p>
 			</div>
+			
 		</div>
-	</div>		
+
+	</main>
+
+
 </body>
 </html>
