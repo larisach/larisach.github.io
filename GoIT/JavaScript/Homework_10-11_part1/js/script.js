@@ -14,5 +14,6 @@ var exponent = prompt('Введите степень', '');
 if (exponent < 0) {
 	alert('Степень ' + exponent + ' не поддерживается, введите целую степень, большую 0!');
 } else {
+console.log('result = ', pow(base, exponent));
 alert( pow(base, exponent) );
 }
