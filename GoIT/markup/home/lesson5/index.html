@@ -2,53 +2,43 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Homework5</title>
+	<title>Cadastre</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
-			<div class="upper_menu">
-			<div class="left_upper_menu">
-				<ul>
-					<li><a href="#">Meu YouBike</a></li>
-					<li><a href="#">Vender</a></li>
-					<li><a href="#">Forum</a></li>
-					<li><a href="#">Contato</a></li>
-					<li><a href="#">Ajuda</a></li>
-				</ul>
-			</div>
+	<div class="header clearfix">
+		<ul class="left_upper_menu ">
+			<li><a href="#">Meu YouBike</a></li>
+			<li><a href="#">Vender</a></li>
+			<li><a href="#">Forum</a></li>
+			<li><a href="#">Contato</a></li>
+			<li><a href="#">Ajuda</a></li>
+		</ul>
 
-			<div class="right_upper_menu">				
-				<ul>
-					<li><a href="#">Minhas Ofertas</a></li>
-					<li><span>Ola!&nbsp;</span><a href="#">Entrar</a><span>&nbsp;ou&nbsp;</span><a href="#">Cadastre-se</a></li>
-				</ul>
+			<div class="right_upper_menu clearfix">					
+				<button>Ola! <u>Entrar</u> ou <u>Cadastre-se</u></button>		
+				<a href="#" class="flag">Minhas Ofertas</a>
 			</div>
-			</div>
-	</header>
-	<main class="main_form">
-		<div class="title_registration">
-			<span>Cadastre-se</span>
-		</div>
-		<div class="separation"></div>
-			<div class="body_registration">
-				<div class="button">								
-						<a href="https://www.facebook.com/">
-							<span class="icon">f</span>
-							<span class="bodyButton">
-								<strong>Log In</strong>
-								with
-								<strong>Facebook</strong>
-							</span>										
-						</a>				
-				</div>
-				<div class="OU">
-					<div class="left_line"></div>
-						<p>OU</p>
-					<div class="righe_line"></div>
-				</div>
+	        
+	</div>	
+
+	<div class="wrapper clearfix">
+		<div class="header_wrapper">Cadastre-se</div>
+
+		<div class="wrapper-form">
+			<div class="button">	
+				<a href="https://www.facebook.com/">
+					<span class="icon">f</span>
+						<span class="bodyButton">
+							<strong>Log In</strong>
+							with
+							<strong>Facebook</strong>
+						</span>
+				</a>
+		    </div>
+		    <div class="ou">OU</div>
 							
-			<form action="#" method="post">
+			<form action="#">
 				<ul class="forma">					
 					<li><input type="text" name="firstName" placeholder = "First Name" required></li>
 					<li><input type="text" name="lastName" placeholder = "Last Name" required></li>
@@ -56,8 +46,8 @@
 					<li><input type="password" name="password" placeholder = "Choose Password" required></li>
 					<li><input type="password" name="password" placeholder = "Password Confirm" required></li>
 					<li>
-						<input type="checkbox" name="checkbox">
-						<span>Send me Youbike updates and tips</span>
+						<input type="checkbox" name="checkbox" id="check">
+						<label for="check">Send me Youbike updates and tips</label>
 					</li>
 					<li>
 						<input type="submit" value="Create my Account">
@@ -69,11 +59,8 @@
 				<p>By clicking the button above, you agree to the Terms of Service</p>
 				<p>Xiew our Privacy Policy.</p>
 			</div>
-			
 		</div>
-
-	</main>
-
-
+	</div>
+		
 </body>
 </html>
