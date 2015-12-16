@@ -50,8 +50,9 @@ body {
 .left_upper_menu li:first-child {
 	width: 160px;
 }
+
 .registr {
-	float: right;
+	float: left;
 	margin-right: 20px;	
 	width: 191px;
 	height: 26px;
@@ -78,7 +79,7 @@ body {
 	left: 19px;
 }
 .flag {
-	float: right;
+	float: left;
 	position: relative;
 	width: 148px;
 	height: 26px;
