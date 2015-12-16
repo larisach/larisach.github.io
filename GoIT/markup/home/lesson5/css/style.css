@@ -50,19 +50,26 @@ body {
 .left_upper_menu li:first-child {
 	width: 160px;
 }
-.right_upper_menu button {
+.registr {
 	float: right;
-	margin-right: 20px;
+	margin-right: 20px;	
 	width: 191px;
-	height: 36px;
-	border: none;
+	height: 26px;
 	color: #fefefe;
 	background: #4faedb;
+	text-align: center;
+	padding-top: 10px; 
+	
   background-image: -webkit-linear-gradient(top, #4faedb, #2e7ac4);
   background-image: -moz-linear-gradient(top, #4faedb, #2e7ac4);
   background-image: -ms-linear-gradient(top, #4faedb, #2e7ac4);
   background-image: -o-linear-gradient(top, #4faedb, #2e7ac4);
   background-image: linear-gradient(to bottom, #4faedb, #2e7ac4);
+}
+.registr a {
+	padding: 0 7px;
+	color:#ffffff;
+	text-decoration: underline;
 }
 .flag:before {
 	content: url('../img/icon.png');
@@ -81,18 +88,16 @@ body {
 	color: #fefefe;
     text-align: center;   
 }
+.flag a {
+	color: #60b5ed;
+}
 .left_upper_menu li>a:hover {
 	color: #fff;
 	background-color: #4eabda;
 }
-.flag:hover {
-	background: #4faedb;
-  background-image: -webkit-linear-gradient(top, #4faedb, #2e7ac4);
-  background-image: -moz-linear-gradient(top, #4faedb, #2e7ac4);
-  background-image: -ms-linear-gradient(top, #4faedb, #2e7ac4);
-  background-image: -o-linear-gradient(top, #4faedb, #2e7ac4);
-  background-image: linear-gradient(to bottom, #4faedb, #2e7ac4);
-  text-decoration: none;
+.flag a:hover {
+	color: #fff;
+	text-decoration: none;
 }
 
 /*WRAPPER*/
@@ -145,6 +150,7 @@ body {
 	float: left;
 	margin-left: 17px;
     font-size: 26px; 
+    font-weight: 600;
 	color: white;	
 }
 .icon:after {
@@ -238,10 +244,10 @@ input[type=submit] {
     background: -webkit-linear-gradient(top,  rgba(78,171,218,0.99) 0%,rgba(42,138,216,1) 50%,rgba(46,122,196,1) 100%); /* Chrome10+,Safari5.1+ */
 }
 input[type=submit]:focus {
-	border: 1px solid #1b5288;
-	background: rgb(62,84,157); /* Old browsers */
-    background: -webkit-linear-gradient(top,  rgba(62,84,157,1) 0%,rgba(47,64,120,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(62,84,157,1) 0%,rgba(47,64,120,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #1b5288;
+	-webkit-box-shadow: 0px 0px 19px 0px rgba(105,155,205,1);
+	-moz-box-shadow: 0px 0px 19px 0px rgba(105,155,205,1);
+	box-shadow: 0px 0px 19px 0px rgba(105,155,205,1);
 }
 ::-webkit-input-placeholder {
 	color: #ccc;
