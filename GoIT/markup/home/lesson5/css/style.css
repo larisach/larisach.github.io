@@ -27,34 +27,31 @@ body {
 /*HEADER*/
 .header {
 	background: url('../img/background_upperMenu.png') repeat-x;
-	height: 36px;
+	height: 36px;	
+}
+.head{
+	width: 1124px;
 	margin: 0 auto;	
 }
 .left_upper_menu {
-	float: left;
-	height: 36px;	
-	margin-left: 430px;
+	float: right;
+	height: 36px;
 }
 .left_upper_menu li {
  	float: left;
  	list-style: none;
- 	width: 70px;
  	text-align: center;
 }
  .left_upper_menu li a {	
 	display: block;
+	padding: 0 12px;
  	line-height: 36px;
  	color: #60b5ed;
  	text-decoration: none; 
 }
-.left_upper_menu li:first-child {
-	width: 160px;
-}
-
 .registr {
-	float: left;
-	margin-right: 20px;	
-	width: 191px;
+	float: right;
+	padding: 0 12px;
 	height: 26px;
 	color: #fefefe;
 	background: #4faedb;
@@ -72,6 +69,9 @@ body {
 	color:#ffffff;
 	text-decoration: underline;
 }
+.registr a:hover {
+    text-decoration: none;
+}
 .flag:before {
 	content: url('../img/icon.png');
 	position: absolute;
@@ -79,26 +79,24 @@ body {
 	left: 19px;
 }
 .flag {
-	float: left;
+	float: right;
 	position: relative;
-	width: 148px;
-	height: 26px;
 	border-left: 1px solid #56a2dc;
-	padding: 10px 13px 0 20px; 
-    text-decoration: none;
-	color: #fefefe;
-    text-align: center;   
+	padding: 0 20px 0 45px; 
+    text-align: center;
+	color: #fefefe;       
 }
 .flag a {
-	color: #60b5ed;
+	line-height: 36px;
+    color: white; 
+	text-decoration: none;
+}
+.flag a:hover {
+    text-decoration: underline;
 }
 .left_upper_menu li>a:hover {
 	color: #fff;
 	background-color: #4eabda;
-}
-.flag a:hover {
-	color: #fff;
-	text-decoration: none;
 }
 
 /*WRAPPER*/
@@ -121,7 +119,7 @@ body {
 }
 .wrapper-form {
 	position: relative;
-	padding-top: 36px;
+	padding-top: 19px;
 	padding-bottom: 20px;
 	text-align: center;
 	background-color: rgba(66, 69, 60, 0.7);
@@ -129,12 +127,10 @@ body {
 
 /*BUTTON*/
 .button {
-	position: absolute;
+	position: relative;
 	width: 278px;
 	height: 34px;
-	margin: -17px 0 0 -139px; 
-	top: 36px;
-	left: 50%;
+	margin: 0 auto;
 	border-bottom: #363f66;
 	border-left: #384975;
 	border-right: #354873;
@@ -182,7 +178,7 @@ body {
 }
 .ou{
 	color: #999;
-	margin: 30px 0;
+	margin: 15px auto;
 }
 .ou:before,
 .ou:after{
@@ -196,9 +192,6 @@ body {
 }
 
 /*FORMA*/
-.forma {
-	margin-top: -15px;
-}
 *:focus {
 	outline: none;
 }
