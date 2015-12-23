@@ -39,6 +39,7 @@ body {
 }
 .left_upper_menu li {
  	float: left;
+ 	margin-right: 7px;
  	list-style: none;
  	text-align: center;
 }
