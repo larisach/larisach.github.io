@@ -25,6 +25,9 @@ var app = {
 			params.parentElement.appendChild(element);
 			element.value = params.valueText;
 		}
+		if(params.styledisplay) {
+			element.style.display = params.styledisplay;
+		}
 		return element;
 	}, 
 
@@ -37,8 +40,9 @@ var app = {
 			});
 		for (var j = 1; j <= answersAmount; j++) {
 			var lblAnswers = this.createElement({
-				tagName: 'p',	
-				styleName: '35px',				
+				tagName: 'label',	
+				styleName: '35px',	
+				styledisplay: 'block',			
 				content: 'Вариант ответа №' + j,
 				parentElement: form
 			});
