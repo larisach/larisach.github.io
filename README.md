@@ -1,4 +1,3 @@
-# larisach.github.io
 
 # <b>HTML, CSS</b><br>
 <b>Homework №1</b> - <a href="http://larisach.github.io/GoIT/markup/home/lesson1/index.html">Ссылка</a><br>
