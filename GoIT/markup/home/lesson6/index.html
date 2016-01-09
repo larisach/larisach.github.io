@@ -10,18 +10,15 @@
 <!-- **************************************HEADER*************************************************************** -->
 	<header>
 		<div class="phone">
-			<img src="img/phone.png" alt="phone">
-			<a href="callto:+30441234567">(044)123-45-67</a>
+			<a class="tel" href="callto:+30441234567">(044)123-45-67</a>
 			<a href="callto:+30445678910">(044)567-89-10</a>		
 		</div>
 		<div class="registration">
-			<img src="img/person.png" alt="person">
 				<form class="login" action="#" metod="post">					
 					<input type="text" name="login" placeholder = "логин" required>
 					<input type="password" name="password" placeholder = "пароль" required>
 					<input type="submit" value="вход">				
-				</form>
-				<span>|</span>
+				</form>				
 				<a class="reg" href="#">регистрация</a>
 				<a class="pass"href="#">забыли пароль?</a>			
 		</div>
@@ -38,26 +35,25 @@
 		</div>
 
 	<div class="header_menu">
+	<div class="right-menu">	
+				<span class="text">товаров:</span>
+				<span class="number">0</span>
+				<span class="textSum">на сумму:</span>
+				<span class="numberSum">0,00 грн.</span>
+		</div>
 		<ul class="left-menu">
 			<li><a href="#">О КОМПАНИИ</a></li>
 			<li><a href="#">ОПЛАТА</a></li>
 			<li><a href="#">ДОСТАВКА</a></li>
 			<li><a href="#">СТАТЬИ</a></li>
 			<li><a href="#`">КОНТАКТЫ</a></li>
-		</ul> 
-		<div class="right-menu">	
-				<a href=""><img src="img/basket.png" alt="basket"></a>
-				<span class="text">товаров:</span>
-				<span class="number">0</span>
-				<span class="textSum">на сумму:</span>
-				<span class="numberSum">0,00 грн.</span>
-		</div>
+		</ul> 		
 	</div>
 	</header>
 
 
 <!-- *******************************************MAIN************************************************************************* -->
-<main>
+<main class="clearfix">
 <div class="searchCars">	
 <h3>Поиск по автомобилю</h3>	
 		
@@ -184,20 +180,15 @@
 </div>
 <!-- ************************************** -->
 
-<div class="Column">
+<div class="Column clearfix">
 
 	         <div class="contentLeft">   
-	         	 <div class="headerLeft">
-	         	 	<img src="img/list.png" alt="list">
+	         	 <div class="headerLeft">	         	 	
 	         	 	<span>КАТАЛОГ ПРОДУКЦИИ:</span>
 	           	 </div>
 
-
-
-
 	           	 <div class="titleBus">
-	           	 	<figure>
-	         	 		<img src="img/icon_content.png" alt="icon_content">
+	           	 	<figure>	         	 		
 	         	 		<span>ШИНЫ</span>
 	         	 	</figure>	           	 
 
@@ -211,8 +202,7 @@
 
 
 	           	 <div class="titleDrives">
-	           	 	<figure>
-	         	 		<img src="img/icon_content.png" alt="icon_content">
+	           	 	<figure>	         	 		
 	         	 		<span>ДИСКИ</span>
 	         	 	</figure>	           	 
 
@@ -225,8 +215,7 @@
 	           	  </div>
 
 	           	  <div class="titleBolts">
-	           	 	<figure>
-	         	 		<img src="img/icon_content.png" alt="icon_content">
+	           	 	<figure>	         	 		
 	         	 		<span>БОЛТЫ</span>
 	         	 	</figure>	           	 
 
@@ -244,16 +233,14 @@
 	         <!--  -->
 
 	        <div class="contentRight">
-	             <div class="headerRight">
-	         	 	<img src="img/list.png" alt="list">
+	             <div class="headerRight">	         	 	
 	         	 	<span>БРЕНДЫ:</span>	         	 	
 	         	 </div>
 
 	         	<form action="#">
 
 	           	 	<div class="titleBus">
-	           	 		<figure>
-	         	 			<img src="img/icon_content.png" alt="icon_content">
+	           	 		<figure>	         	 			
 	         	 			<span>ШИНЫ</span>
 	         	 		</figure>	
 
@@ -272,8 +259,7 @@
 	           	  	</div>
 
 	           		<div class="titleDrives">
-	           	 		<figure>
-	         	 			<img src="img/icon_content.png" alt="icon_content">
+	           	 		<figure>	         	 			
 	         	 			<span>ДИСКИ</span>
 	         	 		</figure>	           	 
 
@@ -298,7 +284,7 @@
 
 	         <!--  -->
 
-             <div class="contentCenter">
+             <div class="contentCenter clearfix">
              <a href="#">
              	<figure class="foto1">
              		<p class="title">Goodyear</p>
