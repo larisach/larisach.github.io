@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js_09-10</title>
+	<link rel="stylesheet" href="css/style.css">	
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>	
+	<script src="js/script.js"></script>
+	<script src="js/jquery.jcarousel.js"></script>
+    <script src="js/jquery.customSelect.js"></script> 
+    <script src="js/jquery.checkbox.js" type="text/javascript"></script>
+    <script src="js/jquery.color.js"></script>
+<body>
+<div class="wrapper clearfix">
+
+<!-- Анимированное меню -->
+ <div class="animationMenu">
+      <ul class="sidebar clearfix">
+        <li><a href="#">Nav 1</a></li>
+        <li><a href="#">Nav 2</a></li>
+        <li class="triangleDown"><a href="#">Nav 3</a>
+          <ul class="submenu1">
+            <li><a href="#">Nav 3.1</a></li>
+            <li><a href="#">Nav 3.2</a></li>
+            <li><a href="#">Nav 3.3</a></li>
+            <li class="triangleRight"><a href="#">Nav 3.4</a>
+              <ul class="submenu2">
+                <li><a href="#">Nav 3.4.1</a></li>
+                <li class="triangleRight"><a href="#">Nav 3.4.2</a>
+                	<ul class="submenu2">
+                		<li><a href="#">Nav 3.4.2.1</a></li>
+                		<li><a href="#">Nav 3.4.2.2</a></li>
+                		<li><a href="#">Nav 3.4.2.3</a></li>
+                		<li><a href="#">Nav 3.4.2.4</a></li>
+                		<li><a href="#">Nav 3.4.2.5</a></li>
+             		 </ul>
+           		 </li>
+                </li>
+                <li><a href="#">Nav 3.4.3</a></li>
+                <li><a href="#">Nav 3.4.4</a></li>
+                <li><a href="#">Nav 3.4.5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Nav 3.5</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Nav 4</a></li>
+        <li><a href="#">Nav 5</a></li>
+      </ul>
+    </div>
+<!--  карусель -->
+	<div class="carousel clearfix">
+    	<div class="nav-wrapper-prev">
+    		<a class="jcarousel-prev" href="#"><div class="arrow left "></div></a>
+    	</div>
+
+		<div class="jcarousel">
+			<ul class="clearfix">
+            	<li><img src="img/1img.jpg" alt="cat1"></li>
+            	<li><img src="img/2img.jpg" alt="cat2"></li>
+            	<li><img src="img/3img.jpg" alt="cat3"></li>
+            	<li><img src="img/4img.jpg" alt="cat4"></li>
+            	<li><img src="img/5img.jpg" alt="cat5"></li>
+            	<li><img src="img/6img.jpg" alt="cat6"></li>
+    		</ul>
+    	</div>
+
+    	<div class="nav-wrapper-next clearfix">
+    		<a class="jcarousel-next" href="#"><div class="arrow right "></div></a>
+ 		</div> 
+	</div>
+ 	
+ <!-- select -->
+ 	<div class="Select clearfix">
+   		<label class="title">Выберите породу кота:</label>
+   		<select class="styled">
+				<option class="customSelect" selected="selected" value="">...</option>			
+				<option class="customSelect" value="Абиссинская">Абиссинская</option>
+				<option class="customSelect" value="Австралийский">Австралийский мист</option>
+				<option class="customSelect" value="Британская">Британская короткошёрстная</option>		
+				<option class="customSelect" value="Донской">Донской сфинкс</option>
+				<option class="customSelect" value="Русская">Русская голубая</option>
+				<option class="customSelect" value="Сиамская">Сиамская</option>		
+		</select>
+    </div>
+
+<!-- чекбокс с помощью jquery -->
+    <div class="Check clearfix">
+		<div>
+			<label for="ch1">label 1</label>
+			<span class="niceCheck">
+				<input type="checkbox" id="ch1" value="on" tabindex="1"/>
+			</span>
+		</div>
+		<div>
+			<label for="ch2">label 2</label>
+			<span class="niceCheck">
+				<input type="checkbox" id="ch2" checked="checked" value="on" tabindex="2"/>
+			</span>
+		</div>
+		<div>
+			<label for="ch3">label 3</label>
+			<span class="niceCheckDisabled">
+				<input type="checkbox" id="ch3" checked="checked" disabled="disabled" tabindex="3"/>
+			</span>
+		</div>
+    </div>
+
+<!-- чекбокс с помощью css -->
+    <div class="Check_CSS ">
+   		<div>
+      		<input class="inputChecked" type="checkbox" id="inputChecked1">
+      		<label class="lblChecked" for="inputChecked1">label 1</label>
+    	</div>
+    	<div>
+      		<input class="inputChecked" type="checkbox" id="inputChecked2" checked="checked">
+      		<label class="lblChecked" for="inputChecked2">label 2</label>
+    	</div>
+    	<div>
+      		<input class="inputCheckedDisabled" type="checkbox" id="inputChecked3" checked="checked" disabled="disabled">
+      		<label class="lblCheckedDisabled" for="inputChecked3">label 3</label>
+    	</div>
+    </div>
+</div>	
+</body>
+</html>

@@ -1,0 +1,225 @@
+* { 
+	margin: 0; 
+	padding: 0;
+	font-size:14px;
+	font-family: Arial, Helvetica, sans-serif
+}
+body {
+  background: #f9f9f9; 
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.wrapper {  
+	width: 964px; 
+	margin: 15px auto; 
+	padding: 25px 46px 60px 46px; 
+	background-color: white; 
+	box-shadow: 0 5px 5px rgba(0,0,0,0.3); 
+}
+/*<!--  карусель -->*/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+  height: 394px;
+  margin: 0 auto;
+  border: 10px solid #908787;
+  border-radius: 5px;
+
+  float: left;
+}
+.jcarousel ul {
+  width: 20000em;
+  position: relative; 
+  list-style: none;  
+}
+.jcarousel li { 
+  float: left;
+}
+.arrow {
+  width: 0px;
+  height: 0px;
+  border: 35px solid transparent;
+  border-top-color: #908787;    
+}
+.arrow:before{
+  content:'';
+  border: 30px solid transparent;
+  border-top-color: white;
+  display: inline-block;
+  -webkit-transform: translate(-30px, -50px);
+}
+.arrow.left {	
+  transform: rotate(90deg) translate(0px, 25px);
+  -webkit-transform: rotate(90deg) translate(0px, 25px);
+  -moz-transform: rotate(90deg) translate(0px, 25px);
+  -o-transform: rotate(90deg) translate(0px, 25px);
+  -ms-transform: rotate(90deg) translate(0px, 25px);
+}
+.arrow.right {
+  transform: rotate(270deg) translate(0px, 25px);
+  -webkit-transform: rotate(270deg) translate(0px, 25px);
+  -moz-transform: rotate(270deg) translate(0px, 25px);
+  -o-transform: rotate(270deg) translate(0px, 25px);
+  -ms-transform: rotate(270deg) translate(0px, 25px);
+}
+.nav-wrapper-prev {
+	float: left;
+	margin-top: 150px;
+	margin-left: 60px;
+}
+.nav-wrapper-next {
+    float: left;
+    margin-top: 150px;
+}
+
+/*<!-- select -->*/
+.Select {
+	margin: 15px 130px; 
+}
+.title {
+	font-weight: bold;
+	color: #908787;
+}
+.customSelect { 
+	padding:5px 7px;
+	background-color: #f5f0de;
+	color: #908787;
+	border:1px solid #908787;	
+}
+.customSelect.customSelectHover {
+	background-color:  #908787;
+	color: white;
+}
+.customSelectInner {
+	background: url('../img/arrow.png') no-repeat center right;
+}
+
+/*<!-- чекбокс с помощью jquery -->*/
+.Check {
+	margin: 15px 60px; 
+	float: left;
+}
+.Check label {
+	cursor: pointer;
+}
+.niceCheck, .niceCheckDisabled {
+	width: 17px;
+	height: 17px;
+	display: inline-block;	
+	cursor: pointer;	
+}
+.niceCheckDisabled {
+	background: url(../img/checkbox-disabled.png);
+	background-position: 0 -17px;
+}
+.niceCheck {
+	background: url(../img/checkbox.png);
+}
+.niceCheck input, .niceCheckDisabled input {
+	display: none;
+}
+
+/*<!-- чекбокс с помощью css -->*/
+.Check_CSS {
+	float: left;
+	margin: 15px 0; 
+}
+.inputChecked, .inputCheckedDisabled {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);  
+}
+.lblChecked, .lblCheckedDisabled {
+	cursor: pointer;
+}
+.lblChecked:after, .lblCheckedDisabled:after {
+	content: " ";
+	display: inline-block;
+	width: 20px;
+	height: 17px;
+	position: relative;
+	top: 3px;
+	margin-left: 5px;
+}
+.lblChecked:after {
+	background: url(../img/checkbox.png) no-repeat;
+}
+.lblCheckedDisabled:after {
+	background: url(../img/checkbox-disabled.png) no-repeat;
+}
+.inputChecked:checked + .lblChecked:after, .inputCheckedDisabled + .lblCheckedDisabled:after {
+	background-position: 0 -17px;
+}
+
+
+/*<!-- Анимированное меню -->*/
+.animationMenu {
+	margin-bottom: 30px;
+   position: relative;
+  z-index: 1;
+}
+.sidebar{	
+  background-color: #3b7bdb;  
+}
+.sidebar li {
+  position: relative;
+  float: left;
+  list-style: none;
+}
+.sidebar li a {
+  padding: 15px 35px;
+  line-height: 60px;
+  color: #fff;
+  text-decoration: none;  
+}
+.sidebar li a:hover { 
+  color: rgb(50,50,50);  
+}
+.submenu1 li  {
+	margin: 0 10px;
+  padding: 5px;
+  border-bottom: solid 1px #3b7bdb;
+  width: 180px;
+}
+.submenu1 li a{
+  text-align: left;
+  padding: 15px 5px;
+  line-height: 40px;
+}
+.submenu1 {
+  background-color: #3b7bdb;
+  position: absolute;     
+  display:none;
+  top: 50px;
+  left: 23px;
+}
+.submenu2 {
+  background-color: #3b7bdb;
+  position: absolute;     
+  display:none;
+  top: 0;
+  left: 190px;  
+}
+.triangleDown:after{  
+  content: '';  
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 20px;
+  height: 7px;
+  width: 10px; 
+  background: url('../img/arrow-down.png') no-repeat center right;
+}
+.triangleRight:after{
+  content: '';  
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 20px;
+  height: 7px;
+  width: 10px; 
+  background: url('../img/arrow-right.png') no-repeat center right;
+}
