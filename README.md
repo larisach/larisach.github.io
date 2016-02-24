@@ -18,3 +18,5 @@
 <b>Homework №9-10</b> - <a href="http://larisach.github.io/GoIT/JavaScript/js_09-10/index.html">Ссылка</a><br>
 <b>Homework №11-12-1</b> - <a href="http://larisach.github.io/GoIT/JavaScript/js_11-12_1/index.html">Ссылка</a><br>
 <b>Homework №11-12-2</b> - <a href="http://larisach.github.io/GoIT/JavaScript/js_11-12_2/index.html">Ссылка</a><br>
+<b>Homework №13-14</b> - <a href="http://larisach.github.io/GoIT/JavaScript/js_13-14/index.html">Ссылка</a><br>
+<b>Homework №15-16</b> - <a href="http://larisach.github.io/GoIT/JavaScript/js_15-16/index.html">Ссылка</a><br>
