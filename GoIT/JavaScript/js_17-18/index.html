@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js_11-12-2</title>
+	<link rel="stylesheet" href="css/style.css">	
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>	
+  <script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>  
+<body>
+  <script type="text/template" id="primary">
+    <div class="wrapper">
+        <h2><%= name %></h2>
+          <div class="foto">  
+            <img src= <%= foto %> alt="MyFoto">
+          </div>
+            <p><%= activity %></p>
+            <div class="hr"></div>
+            <p><%= favor %></p>
+            <ul>
+              <% for ( var i = 0; i < listingFavor.length; i++ ) { %>
+                <li><%= listingFavor[i] %></li>
+              <% } %>
+            </ul> 
+            <div class="hr"></div>
+            <p><%= contact %>
+              <span><%= contactТumber %></span>
+            </p>
+            <p><%= profile %>
+              <span>
+                  <a href= <%= link %> target="_blank"><%= nameProfile %></a>
+              </span>
+            </p> 
+            <div class="hr"></div>
+            <p>
+              <span><%= feedback %></span>  
+              <span><%= feedbackText %></span>
+            </p>
+    </div>
+  </script> 
+</body>
+</html>
