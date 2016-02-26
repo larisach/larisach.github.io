@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js_13-14</title>
+	<link rel="stylesheet" href="css/style.css">	
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>	
+  <script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>  
+<body>
+
+  <script type="text/template" id="primary">
+    <div class="wrapper">
+      <form class="test" action="#" metod="post">
+        <h1><%= titleTest %></h1>
+          <ol>
+            <% for ( var item in questions) { %>
+              <li class ="question"><h3><%= questions[item].question %></h3></li>
+                <p class="condition"><%=condition%></p>
+                <% questions[item].answers.forEach(function(answer) { %>
+                  <p><label>               
+                      <input type="checkbox"  name="<%= item %>">
+                      <%= answer %>
+                     </label>
+                  </p>
+                <% }); %>
+            <% } %>
+          </ol>
+
+          <div class="panel">
+            <input class="btnSave" type="submit" value="<%= btnSaveText %>">
+          </div> 
+    </form> 
+
+  <div class="modalWindow"><%=modalWindow%>
+    <input class="btnClose" type="submit" value="<%= btnCloseText %>">
+
+  </div>
+  </script> 
+
+
+</body>
+</html>
