@@ -23,7 +23,7 @@ h1 {
   text-align: center;
 }
 /*modal Window*/
-.modalWindow {
+.modalWrapper {
   display: none;
   width: 550px;
   height: 200px;
@@ -35,6 +35,10 @@ h1 {
   left: 50%;
   margin-left: -275px;
   z-index: 1;
+}
+#modalWrapper p {
+  color: #337ab7;
+  font-weight: bold;
 }
 .btnClose { 
   height: 32px; 

@@ -1,9 +1,10 @@
+'use strict';
 $(function() {
-	'use strict';
+	
 	var test = $('#primary').html();	
 
-	 var questions = {
-	 	item1: {
+	 var questions = [
+	 	 {
 		        'question': 'Что такое БЭМ?',
 		        'answers': [
 		           'a. Блочно-элементная методология',
@@ -11,9 +12,9 @@ $(function() {
 		           'c. Браузер-элемент-модификатор',
 		           'd. Блок-элемент-модификатор'
 		        ],
-		        'key': 2
+		        'key': 3
 		    },
-		item2: {
+		 {
 			    'question': 'В чем основной недостаток использования CSS фреймворков?',
 		        'answers': [
 		           'a. Именование классов фрейморков противоречит БЭМ',
@@ -23,7 +24,7 @@ $(function() {
 		        ],
 		        'key': 1
 		    },
-		item3: {
+		 {
 			    'question': 'Почему в браузере не отображается текст, расположенный между тегами <!-- и -->?',
 		        'answers': [
 		           'a. Потому что таких тегов не существует и браузер их игнорирует.',
@@ -33,7 +34,7 @@ $(function() {
 		        ],
 		        'key': 1
 		    },
-		item4: {
+		 {
 			    'question': 'Какое свойство CSS существовало в более ранних спецификациях чем CSS3?',
 		        'answers': [
 		           'a. background-image',
@@ -43,14 +44,14 @@ $(function() {
 		        ],
 		        'key': 1
 		    }
-		}
+		]
 
 	var data = {
 		titleTest: 'Пробный тест по HTML',
 		condition: 'Выберите один ответ:',
         questions,
         btnSaveText: 'Проверить мои результаты',
-        modalWindow: 'Модальное окно',
+        modalWindow: '',
         btnCloseText: 'Закрыть'
 	};
 
@@ -61,9 +62,18 @@ $(function() {
 	var content = tmpl(test, JSON.parse(testLocal));
 	$('body').append(content);
 
+	var rightAnswer = [];
+	
+	for (var i = 0; i < questions.length; i++) {
+
+		rightAnswer.push(questions[i].key);	
+	};
+	console.log("rightAnswer", rightAnswer); 
+
 
 // select one checkbox
 	$('input:checkbox').change(function(){
+
 		var state = $('input[name="' + $(this).attr('name') +'"]').is(':checked');
 		$('input[name="' + $(this).attr('name') +'"]').removeAttr('checked');	
 		 if(state==true) { 		 
@@ -75,38 +85,34 @@ $(function() {
 
 
 
-	$('.btnSave').click(function(){
-		//result();
+	$('.btnSave').click(function(){		
 		getValues();
-
-	   // $('.modalWindow').fadeIn('slow');
+		
     });
-    $('.btnClose').click(function(){
-    	$('.modalWindow').fadeOut('slow');
+    $('.btnClose').click(function(){    	
+    	$('.modalWrapper').fadeOut('slow');
+    	 $('input:checkbox').removeAttr('checked');
     });
 
+    function getValues() {    	
+    	var inputCheckbox = [];    	
+    	var checkboxes = $('input[type=checkbox]:checked');
+    	for (var i=0; i < checkboxes.length; i++){
+    		inputCheckbox.push(checkboxes.eq(i).val());    	
+    	}    	
+    	 console.log(inputCheckbox.toString() + "=" + rightAnswer.toString());  
 
-// 
+         $('html, body').animate({
+         	scrollTop: 0
+         }, 'slow');
 
-    function result(){
-    	
-  //   	var checked = [];
-		// $(':checkbox:checked').each(function () {
-  //   		checked.push($(this).val());
-    	
-		// });   
-
-  //   	for(var index in data.questions)
-  //   	{
-  //   		var keyAnswer = data.questions[index].key;    	
-  //   		console.log("key",keyAnswer);   
-  //   		questions[index].answers.forEach(function(answer) {
-  //           console.log("answer", answer);
-  //           });		    		
-  //   	}
-    }
-
-    function getValues() {
-
-    }
+        $('.modalWrapper').fadeIn('slow');
+    	if (inputCheckbox.toString() == rightAnswer.toString()) {
+    		$('.modalWindow').html('Congratulations, you have successfully passed the test!');
+    		
+    	} else {
+    		$('.modalWindow').html('You have not passed the test , try again!');
+    		
+    	};
+    };
 });

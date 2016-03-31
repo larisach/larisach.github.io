@@ -17,9 +17,9 @@
             <% for ( var item in questions) { %>
               <li class ="question"><h3><%= questions[item].question %></h3></li>
                 <p class="condition"><%=condition%></p>
-                <% questions[item].answers.forEach(function(answer) { %>
+                <% questions[item].answers.forEach(function(answer, index) { %>
                   <p><label>               
-                      <input type="checkbox"  name="<%= item %>">
+                      <input type="checkbox"  name="<%= item %>" value="<%= index %>">
                       <%= answer %>
                      </label>
                   </p>
@@ -28,14 +28,14 @@
           </ol>
 
           <div class="panel">
-            <input class="btnSave" type="submit" value="<%= btnSaveText %>">
+            <input class="btnSave" type="submit" value="<%= btnSaveText %>" onclick="return false">
           </div> 
     </form> 
 
-  <div class="modalWindow"><%=modalWindow%>
-    <input class="btnClose" type="submit" value="<%= btnCloseText %>">
-
-  </div>
+<div class="modalWrapper">
+  <div class="modalWindow"><%=modalWindow%></div>
+   <input class="btnClose" type="submit" value="<%= btnCloseText %>">
+</div>
   </script> 
 
 
