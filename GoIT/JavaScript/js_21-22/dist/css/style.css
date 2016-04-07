@@ -1,0 +1,51 @@
+body {
+  background: #f9f9f9;
+}
+.wrapper {  
+	width: 700px; 
+  min-height: 630px;
+	margin: 15px auto; 
+  background: #eeeeff; 
+	padding: 20px 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+h1 {
+  text-align: center;
+}
+.btnSave {
+  height: 32px; 
+  margin: 20px 0;
+  cursor: pointer;
+  box-shadow: 0 0 6px #000;
+  border-radius: 5px;
+}
+.panel {
+  text-align: center;
+}
+/*modal Window*/
+.modalWrapper {
+  display: none;
+  width: 550px;
+  height: 200px;
+  box-shadow: 0 0 6px #000;
+  background: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-left: -275px;
+  z-index: 1;
+}
+#modalWrapper p {
+  color: #337ab7;
+  font-weight: bold;
+}
+.btnClose { 
+  height: 32px; 
+  cursor: pointer;
+  box-shadow: 0 0 6px #000;
+  border-radius: 5px;
+  position: absolute;
+  top: 79%;
+  left: 86%;
+}
