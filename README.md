@@ -23,3 +23,4 @@
 <b>Homework №17-18</b> - <a href="http://larisach.github.io/GoIT/JavaScript/js_17-18/index.html">Ссылка</a><br>
 <b>Homework №19-20</b> - <a href="http://larisach.github.io/GoIT/JavaScript/js_19-20/index.html">Ссылка</a><br>
 <b>Homework №21-22</b> - <a href="http://larisach.github.io/GoIT/JavaScript/js_21-22/index.html">Ссылка</a><br>
+<b>Homework №23-24</b> - <a href="http://larisach.github.io/GoIT/JavaScript/js_23-24/index.html">Ссылка</a><br>
