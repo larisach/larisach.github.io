@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js_23-24</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <script data-main="js/app" src="js/require.js"></script>
+	
+<body>
+  <script type="text/template" id="wrapper-template">
+    <div class="wrapper">
+    <h1>ToDo-list</h1>
+      <ul class="item-list"></ul>
+      <div class="controlls">
+        <input type="text"class="item-value">
+        <button class="item-add">Add</button>
+      </div>
+    </div>
+  </script>
+  <script type="text/template" id="list-template">  
+    <% for (var i =0; i<data.length; i++) { %>  
+         <li><input type="text" class="list" disabled ="disabled" value="<%= data[i] %>">        
+            <span data-value="<%= data[i] %>" class="list__item-delete"><i class="fa fa-trash-o"></i></span>
+            <span data-value="<%= data[i] %>" class="list__item-edit"><i class="fa fa-pencil"></i></span>
+         </li>
+    <% }; %>
+  </script> 
+</body>
+</html>
+
+
